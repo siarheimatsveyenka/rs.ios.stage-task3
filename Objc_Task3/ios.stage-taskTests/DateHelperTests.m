@@ -30,6 +30,12 @@
     XCTAssertEqualObjects(expectedResult, actualResult);
 }
 
+- (void)test22 {
+    NSString *expectedResult = @"December";
+    NSString *actualResult = [self.dateHelper monthNameBy:12];
+    XCTAssertEqualObjects(expectedResult, actualResult);
+}
+
 - (void)test4 {
     NSString *actualResult = [self.dateHelper monthNameBy:0];
     XCTAssertNil(actualResult);
